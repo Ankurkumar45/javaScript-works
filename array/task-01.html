@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting an Array using JavaScript</title>
+</head>
+
+<body>
+    <div class="btn">
+        <h1 align="center">Click on any button</h1>
+    </div>
+    <div class="btnDiv">
+        <button onclick="sorting()">Sorting</button>
+        <button onclick="concating()">Concat</button>
+        <button onclick="removeFirstElement()">Remove</button>
+    </div>
+    <script>
+
+        //Program to sort a JavaScript Array.
+
+        function sorting() {
+            var len = prompt("Enter length of array: ");
+            var arr = [];
+            document.write("Array before sorting: " + "<br>");
+            for (var i = 0; i < len; i++) {
+                arr[i] = prompt("Enter the element: ");
+                document.write(arr[i] + "<br>");
+            }
+            document.write("<br>");
+            var sortedArray = arr.sort();
+            document.write("Array after sorting: " + "<br>");
+            document.write(sortedArray);
+        }
+
+        // Write a program to concatenate two array elements and store them in new array.
+
+        function concating() {
+            var length1 = prompt("Enter 1st Array lenght: ");
+            var arr1 = [];
+            document.write("<br>" + "First array: " + "<br>");
+            for (var j = 0; j < length1; j++) {
+                arr1[j] = prompt("Enter the element: ");
+                document.write(arr1[j] + "<br>");
+            }
+            var length2 = prompt("Enter 2nd Array lenght: ");
+            var arr2 = [];
+            document.write("<br>" + "Second array: " + "<br>");
+            for (var k = 0; k < length2; k++) {
+                arr2[k] = prompt("Enter the element: ");
+                document.write(arr2[k] + "<br>");
+            }
+
+            var newArray = arr1.concat(arr2);
+            document.write("Array after concat(): " + newArray + "<br>");
+        }
+
+
+        //Write a program to remove first element from JavaScript Array.
+
+        function removeFirstElement() {
+            var length = prompt("Enter Array lenght: ");
+            var arr = [];
+            document.write("Actual array: " + "<br>");
+            for (var j = 0; j < length; j++) {
+                arr[j] = prompt("Enter the element: ");
+                document.write(arr[j] + "<br>");
+            }
+            var a = arr.slice(1);
+            document.write("Array after removal of first element: " + a + "<br>");
+        }
+    </script>
+
+    <style>
+        h1 {
+            border-bottom: 1px solid rgb(13, 58, 237);
+        }
+
+        body {
+            background-color: #06efc5;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: #74f50a;
+            border-radius: 5px;
+            border: 2px outset whitesmoke;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: #fafaf9;
+            border-radius: 5px;
+            border: 2px outset rgb(85, 244, 5);
+        }
+    </style>
+
+</body>
+
+</html>
