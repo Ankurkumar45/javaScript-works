@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kanit&family=Roboto+Mono&family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-image: url("pexels-fox-1172675.jpg");
+    background-repeat: no-repeat;
+}
+
+button {
+    color: rgb(0, 26, 17);
+    cursor: pointer;
+}
+form{
+    text-align: center;
+    color: rgb(5, 176, 203);
+}
+input{
+    color: black;
+    font-weight: bold;
+}
+h1{
+    color: rgb(5, 176, 203);
+    border-bottom: 2px solid rgb(5, 176, 203);
+}
+#formContainer{
+    color: rgb(171, 249, 2);
+}
